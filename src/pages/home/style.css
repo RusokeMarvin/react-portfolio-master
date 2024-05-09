@@ -21,7 +21,7 @@ section {
 }
 
 .btn-portfolio a {
-    color: #000;
+    color: black;
     text-decoration: none;
 }
 
@@ -31,6 +31,8 @@ section {
 }
 
 .intro_sec {
+    height: calc(100vh - 60px);
+    min-height: 700px;
     height: 100vh;
     margin-top: -60px;
 }
@@ -90,16 +92,11 @@ section {
 }
 
 .intro_sec .h_bg-image {
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 20em; /* Adjust the height as needed */
-    width: 35em; /* Ensure the width spans the container */
-    border-radius: 50%; /* Make border radius round */
+    min-height: 700px;
+    position: relative;
 }
-
-
-
 
 .ac_btn {
     padding: 4px 19px;
