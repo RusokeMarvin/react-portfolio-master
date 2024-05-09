@@ -1,6 +1,6 @@
 const logotext = "MARVIN";
 const meta = {
-    title: "John Doe",
+    title: "Marvin Rusoke",
     description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
 };
 
@@ -20,7 +20,7 @@ const dataabout = {
     aboutme: "Experienced Developer with expertise in React and Django, and proficiency in Python, JavaScript, CSS, and HTML.Experienced Flutter app developer with a keen interest in harnessing the power of AI and Machine Learning. Equipped with strong software development skills, specializing in app development, web development, and networking.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
+        jobtitle: "Software Developer",
         where: "YAdfi",
         date: "2020",
     },
@@ -38,23 +38,23 @@ const worktimeline = [{
 
 const skills = [{
         name: "Python",
-        value: 90,
+        value: 70,
     },
     {
-        name: "Djano",
-        value: 85,
+        name: "Django",
+        value: 70,
     },
     {
         name: "Javascript",
+        value: 75,
+    },
+    {
+        name: "React js",
         value: 80,
     },
     {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
+        name: "flutter",
+        value: 75,
     },
 ];
 
@@ -67,7 +67,7 @@ const services = [{
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
     {
-        title: "Wordpress Design",
+        title: "Web Design",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
 ];
@@ -136,9 +136,9 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "marvinrusoke@gmail.com",
+    YOUR_FONE: "+256705119998",
+    description: "Experienced Developer with expertise in React js and Django, and proficiency in Python, JavaScript, CSS, and HTML.Experienced Flutter app developer with a keen interest in harnessing the power of AI and Machine Learning.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -147,10 +147,10 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
+    github: "https://github.com/RusokeMarvin/",
     facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    linkedin: "www.linkedin.com/in/rusoke-marvin-b78364254",
+    twitter: "https://twitter.com/Rusokemarvin",
 };
 export {
     meta,
