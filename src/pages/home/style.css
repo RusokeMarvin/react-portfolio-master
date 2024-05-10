@@ -161,9 +161,9 @@ section {
 @media (max-width:991.98px) {
     .intro_sec .h_bg-image {
         margin: auto;
-        margin-top: 5em;
+        margin-top: 3em;
         min-height: 35vh;
-        width: 230px; /* Set a specific width for the image */
+        width: 234px; /* Set a specific width for the image */
         margin-bottom: 30px;
         
     }
