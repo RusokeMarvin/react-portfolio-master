@@ -105,8 +105,7 @@ section {
 @media screen and (max-width:768px) {
     .intro_sec .h_bg-image {
         margin: auto;
-        width: auto; /* Set a specific width for the image */
-        height: 50%; 
+        border-radius: 10%;
     }
 }
 
