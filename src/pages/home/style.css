@@ -159,6 +159,9 @@ section {
 }
 
 @media (max-width:991.98px) {
+    .intro_btn-action{
+        display: flex;
+    }
     .intro_sec .h_bg-image {
         margin: auto;
         margin-top: 3em;
@@ -206,3 +209,4 @@ section {
 .mb-1x span{
     color: #00ffee;
 }
+
