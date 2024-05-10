@@ -5,7 +5,7 @@ const meta = {
 };
 
 const introdata = {
-    title: "I’m Marvin Rusoke",
+    title: "I’m Marvin",
     animated: {
         first: "I design cool websites",
         second: "I develop mobile apps",
@@ -73,8 +73,8 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: require('./assets/images/firstimage.jpeg'),
+        description: "Interpretable Intelligent Diagnostic For Lower Respiratory Tract Infections",
         link: "#",
     },
     {
