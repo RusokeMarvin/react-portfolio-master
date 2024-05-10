@@ -21,18 +21,23 @@ const dataabout = {
 };
 const worktimeline = [{
         jobtitle: "Software Developer",
-        where: "YAdfi",
-        date: "2020",
+        where: "Hosty",
+        date: "2024",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Otic Technologies",
+        where: "Frontend Developer",
+        date: "2023",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Otic Technologies",
+        where: "Skills Trainer",
+        date: "2023",
+    },
+    {
+        jobtitle: "Intern",
+        where: "Stratcom communications & computer solutions ltd",
+        date: "2023",
     },
 ];
 
@@ -46,29 +51,29 @@ const skills = [{
     },
     {
         name: "Javascript",
-        value: 75,
+        value: 70,
     },
     {
         name: "React js",
         value: 80,
     },
     {
-        name: "flutter",
+        name: "Flutter",
         value: 75,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Web Design",
+        description: "I specialize in creating visually appealing and user-friendly websites. With a keen eye for design and attention to detail, I ensure that each website I create not only looks great but also functions seamlessly to meet the needs of my clients.",
     },
     {
         title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "As a mobile app developer, I am passionate about crafting innovative and high-quality mobile applications. From concept to deployment, I work closely with my clients to create apps that deliver exceptional user experiences and provide valuable solutions to their target audience.",
     },
     {
-        title: "Web Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "UI & UX Design",
+        description: "With a focus on user-centered design, I specialize in creating intuitive and engaging user interfaces (UI) and user experiences (UX). By conducting thorough research and utilizing best practices, I design interfaces that are not only visually appealing but also easy to navigate and use.",
     },
 ];
 
