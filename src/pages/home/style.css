@@ -102,12 +102,6 @@ section {
     transition: 0.4s ease-in-out;
 }
 
-@media screen and (max-width:768px) {
-    .intro_sec .h_bg-image {
-        margin: auto;
-        border-radius: 10%;
-    }
-}
 
 .ac_btn {
     padding: 4px 19px;
@@ -166,9 +160,12 @@ section {
 
 @media (max-width:991.98px) {
     .intro_sec .h_bg-image {
-        height: 600px;
-        min-height: 75vh;
+        margin: auto;
+        margin-top: 5em;
+        min-height: 35vh;
+        width: 200px; /* Set a specific width for the image */
         margin-bottom: 30px;
+        
     }
     .intro_sec .h_bg-image .block {
         top: unset;
