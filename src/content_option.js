@@ -77,66 +77,68 @@ const services = [{
     },
 ];
 
-const dataportfolio = [{
+const dataportfolio = [
+    {
+        img: require('./assets/images/Agroapp.png'),
+        description: " From crop cultivation to livestock management",
+        link: "https://main--storied-boba-5bb665.netlify.app/",
+    },
+    {
         img: require('./assets/images/firstimage.jpeg'),
         description: "Interpretable Intelligent Diagnostic For Lower Respiratory Tract Infections",
         link: "#",
     },
     {
         img: require('./assets/images/secondimage.jpeg'),
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Your go-to app for booking musicians effortlessly",
+        link: "",
+    },
+
+    {
+        img: require('./assets/images/secondimage.jpeg'),
+        description: "Your go-to app for booking musicians effortlessly",
         link: "#",
+    },
+    {
+        img: require('./assets/images/Agroapp.png'),
+        description: " From crop cultivation to livestock management",
+        link: "https://main--storied-boba-5bb665.netlify.app/",
     },
     {
         img: require('./assets/images/firstimage.jpeg'),
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: require('./assets/images/secondimage.jpeg'),
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: require('./assets/images/secondimage.jpeg'),
-        description: "E-Booking App designed to ease booking of Artists.",
-        link: "#",
-    },
-    {
-        img: require('./assets/images/firstimage.jpeg'),
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Interpretable Intelligent Diagnostic For Lower Respiratory Tract Infections",
         link: "#",
     },
 
     {
         img: require('./assets/images/secondimage.jpeg'),
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Your go-to app for booking musicians effortlessly",
         link: "#",
     },
     {
         img: require('./assets/images/firstimage.jpeg'),
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Interpretable Intelligent Diagnostic For Lower Respiratory Tract Infections",
+        link: "#",
+    },
+    {
+        img: require('./assets/images/Agroapp.png'),
+        description: " From crop cultivation to livestock management",
+        link: "https://main--storied-boba-5bb665.netlify.app/",
+    },
+    {
+        img: require('./assets/images/firstimage.jpeg'),
+        description: "Interpretable Intelligent Diagnostic For Lower Respiratory Tract Infections",
         link: "#",
     },
     {
         img: require('./assets/images/secondimage.jpeg'),
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Your go-to app for booking musicians effortlessly",
         link: "#",
     },
     {
-        img: require('./assets/images/firstimage.jpeg'),
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: require('./assets/images/secondimage.jpeg'),
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: require('./assets/images/firstimage.jpeg'),
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: require('./assets/images/Agroapp.png'),
+        description: " From crop cultivation to livestock management",
+        link: "https://main--storied-boba-5bb665.netlify.app/",
     },
 ];
 
