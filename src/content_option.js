@@ -95,9 +95,9 @@ const dataportfolio = [
     },
 
     {
-        img: require('./assets/images/secondimage.jpeg'),
-        description: "Your go-to app for booking musicians effortlessly",
-        link: "#",
+        img: require('./assets/images/shop1.png'),
+        description: "Your go-to e-commerce website to ease your shopping experience",
+        link: "https://shopappug.netlify.app/",
     },
     {
         img: require('./assets/images/Agroapp.png'),
@@ -105,9 +105,9 @@ const dataportfolio = [
         link: "https://main--storied-boba-5bb665.netlify.app/",
     },
     {
-        img: require('./assets/images/firstimage.jpeg'),
-        description: "Interpretable Intelligent Diagnostic For Lower Respiratory Tract Infections",
-        link: "#",
+        img: require('./assets/images/shop2.png'),
+        description: "Your go-to e-commerce website to ease your shopping experience",
+        link: "https://shopappug.netlify.app/",
     },
 
     {
