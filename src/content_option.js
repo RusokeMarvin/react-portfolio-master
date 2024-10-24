@@ -35,7 +35,7 @@ const worktimeline = [{
         date: "2023",
     },
     {
-        jobtitle: "Intern",
+        jobtitle: "Software Development Intern",
         where: "Stratcom communications & computer solutions ltd",
         date: "2023",
     },
