@@ -50,6 +50,10 @@ const skills = [{
         value: 70,
     },
     {
+        name: "Django Rest Framework",
+        value: 80,
+    },
+    {
         name: "Javascript",
         value: 70,
     },
