@@ -31,7 +31,7 @@ const worktimeline = [{
     },
     {
         jobtitle: "Otic Foundation",
-        where: "Skills Trainer",
+        where: "Web Development Coach",
         date: "2023",
     },
     {
