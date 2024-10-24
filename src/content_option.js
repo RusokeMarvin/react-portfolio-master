@@ -20,17 +20,17 @@ const dataabout = {
     aboutme: "Experienced Developer with expertise in React and Django, and proficiency in Python, JavaScript, CSS, and HTML.Experienced Flutter app developer with a keen interest in harnessing the power of AI and Machine Learning. Equipped with strong software development skills, specializing in app development, web development, and networking.",
 };
 const worktimeline = [{
-        jobtitle: "Software Developer",
-        where: "Hosty",
+        jobtitle: "Mobile App Developer",
+        where: "Mulmet Co. Ltd",
         date: "2024",
     },
     {
-        jobtitle: "Otic Technologies",
+        jobtitle: "Otic Foundation",
         where: "Frontend Developer",
         date: "2023",
     },
     {
-        jobtitle: "Otic Technologies",
+        jobtitle: "Otic Foundation",
         where: "Skills Trainer",
         date: "2023",
     },
