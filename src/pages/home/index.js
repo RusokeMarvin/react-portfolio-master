@@ -4,6 +4,9 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
+import { Portfolio } from "../portfolio";
+import { ContactUs } from "../contact";
+import { About } from "../about";
 
 export const Home = () => {
   return (
@@ -21,7 +24,7 @@ export const Home = () => {
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
-                <h2 className="mb-1x">{introdata.title} <span>Rusoke</span></h2>
+                <h2 className="mb-1x">{introdata.title} <span>Marvin</span></h2>
                 <h1 className="fluidz-48 mb-1x">
                   <Typewriter
                     options={{
@@ -52,7 +55,11 @@ export const Home = () => {
               </div>
             </div>
           </div>
+          
         </div>
+        <Portfolio/>
+        <About/>
+        <ContactUs/>
       </section>
     </HelmetProvider>
   );
