@@ -110,11 +110,11 @@ const contactConfig = {
     YOUR_EMAIL: "marvinrusoke@gmail.com",
     YOUR_FONE: "+256705119998",
     description: "Experienced Developer with expertise in React js and Django, and proficiency in Python, JavaScript, CSS, and HTML.Experienced Flutter app developer with a keen interest in harnessing the power of AI and Machine Learning.",
-    // creat an emailjs.com account 
+    // Create an emailjs.com account and put the IDs in .env.local
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID,
+    YOUR_TEMPLATE_ID: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+    YOUR_PUBLIC_KEY: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
 };
 
 const socialprofils = {

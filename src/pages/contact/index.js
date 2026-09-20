@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
@@ -17,44 +17,62 @@ export const ContactUs = () => {
     variant: "",
   });
 
-  const handleSubmit = (e) => {
+  const showAlert = (variant, alertmessage) => {
+    setFormdata((prev) => ({
+      ...prev,
+      loading: false,
+      variant,
+      alertmessage,
+      show: true,
+    }));
+    document.getElementsByClassName("co_alert")[0]?.scrollIntoView();
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
+
+    const { YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY } =
+      contactConfig;
+
+    if (!YOUR_SERVICE_ID || !YOUR_TEMPLATE_ID || !YOUR_PUBLIC_KEY) {
+      showAlert(
+        "danger",
+        "Email service is not configured yet. Please reach out via the email address listed."
+      );
+      return;
+    }
+
+    setFormdata((prev) => ({ ...prev, loading: true, show: false }));
 
     const templateParams = {
-      from_name: formData.email,
+      from_name: formData.name,
+      reply_to: formData.email,
       user_name: formData.name,
+      user_email: formData.email,
       to_name: contactConfig.YOUR_EMAIL,
       message: formData.message,
     };
 
-    emailjs
-      .send(
-        contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
-        contactConfig.YOUR_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormdata({
-            loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
-            variant: "success",
-            show: true,
-          });
-        },
-        (error) => {
-          console.log(error.text);
-          setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
-            variant: "danger",
-            show: true,
-          });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
-        }
+    try {
+      await emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams, {
+        publicKey: YOUR_PUBLIC_KEY,
+      });
+      setFormdata({
+        email: "",
+        name: "",
+        message: "",
+        loading: false,
+        show: true,
+        variant: "success",
+        alertmessage: "SUCCESS! Thank you for your message.",
+      });
+      document.getElementsByClassName("co_alert")[0]?.scrollIntoView();
+    } catch (error) {
+      showAlert(
+        "danger",
+        `Failed to send! ${error?.text || error?.message || "Please try again."}`
       );
+    }
   };
 
   const handleChange = (e) => {
@@ -86,7 +104,7 @@ export const ContactUs = () => {
               className={`rounded-0 co_alert ${
                 formData.show ? "d-block" : "d-none"
               }`}
-              onClose={() => setFormdata({ show: false })}
+              onClose={() => setFormdata((prev) => ({ ...prev, show: false }))}
               dismissible
             >
               <p className="my-0">{formData.alertmessage}</p>
@@ -152,7 +170,11 @@ export const ContactUs = () => {
               <br />
               <Row>
                 <Col lg="12" className="form-group">
-                  <button className="btn ac_btn" type="submit">
+                  <button
+                    className="btn ac_btn"
+                    type="submit"
+                    disabled={formData.loading}
+                  >
                     {formData.loading ? "Sending..." : "Send"}
                   </button>
                 </Col>
