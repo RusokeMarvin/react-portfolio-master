@@ -1,3 +1,10 @@
+[build.environment]
+# EmailJS client-side identifiers are meant to be public: CRA inlines them into
+# the JS bundle, so the secrets scanner will always find them in build output.
+# Access is restricted via the allowed-domains list in the EmailJS dashboard,
+# not by keeping these values hidden.
+SECRETS_SCAN_OMIT_KEYS = "REACT_APP_EMAILJS_SERVICE_ID,REACT_APP_EMAILJS_TEMPLATE_ID,REACT_APP_EMAILJS_PUBLIC_KEY"
+
 [[redirects]]
 from = "/*"
 to = "/index.html"
